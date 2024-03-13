@@ -1,0 +1,126 @@
+.navbar_back{
+    background: #676464bd;
+    border: 1px solid #ffffff42;
+    /* backdrop-filter: blur(50px); */
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+
+}
+
+#fixed_top,#navbar_backv2{
+    left: 0;
+    background: #676464bd;
+    border: 1px solid #ffffff42;
+}
+
+#navbar_backv2{
+    z-index: 100;
+}
+
+.btn_toggel{
+    display: none;
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+}
+
+.btn_close{
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+}
+
+#navbar_backv2 .nav_link,#fixed_top .nav_link{
+    color: #666777;
+    font-weight: 500;
+    position: relative;
+}
+
+/* .nav_link:hover,.nav_link.active{
+    color: #000;
+    font-weight: 500;
+} */
+
+.active_link{
+    color: #000;
+    font-weight: 500;
+    border-bottom: 4px solid rgb(0, 204, 255);
+}
+
+#login_btn,#singup_btn{
+    color: #fff;
+    font-weight: 500;
+}
+
+#show_login{
+    display: none;
+}
+#show_login_mini{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #useravatar{
+    padding: 25px;
+} */
+
+/* #useravatar>div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+} */
+/* #useravatar>div img{
+    border: 2px solid #00ff43;
+    border-radius: 50%;
+} */
+
+/* #useravatar>div #user{
+    font-size: 20px;
+    font-weight: 600;
+} */
+
+#dropdownStyle{
+    position: static;
+}
+#userdropdown{
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    border: none;
+    /* left: -7rem; */
+    /* left: 75%;
+    max-width: 300px;
+    width: 300px; */
+}
+
+@media (min-width:991px){
+
+    .nav_link:hover:before,.nav_link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+
+
+
+@media (max-width:991px){
+    .btn_toggel{
+        display: block;
+    }
+    #show_login{
+        display: block;
+    }
+    #show_login_mini{
+        display: none;
+    }
+
+}
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+/*** Section Title ***/
+.ligne_About{
+    background: red;
+    height: 3px;
+    width: 5%;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.section_title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#section{
+    background: #fff;
+}

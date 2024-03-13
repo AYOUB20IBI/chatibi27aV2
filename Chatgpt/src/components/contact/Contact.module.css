@@ -1,0 +1,15 @@
+#lesBody{
+    background: #ffffff38;
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    color: #fff;
+}
+
+#section_contact{
+    background-image: linear-gradient(rgba(15, 23, 43, .7), rgba(15, 23, 43, .7)),
+    url(../public/images/back.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

@@ -1,0 +1,17 @@
+#footer a,#footer p{
+    color: #b9b9b9;
+    text-decoration: none;
+}
+   
+#footer a:hover{
+       color:rgb(0, 119, 255);
+}
+   
+#footer #container h5{
+       margin-top: 0;
+       margin-bottom: 0.5rem;
+       font-family: "Poppins", sans-serif;
+       font-weight: 700;
+       line-height: 1.25;
+       font-size: 1.8rem;
+}
