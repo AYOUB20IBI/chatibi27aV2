@@ -7,18 +7,18 @@ import Replicate from "replicate";
 const app = express();
 const port = process.env.PORT || 8000;
 dotenv.config();
-app.use(
-  cors({
-    origin: "*",
-  })
-);
+
 const replicate = new Replicate({
   auth: 'r8_NYJzVG7Tbe73Vyc53KJcm53x2XPRLt31ABrrC',
 });
 
 
 
-
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 // app.use(cors()); 
 app.use(express.json()); 
 
