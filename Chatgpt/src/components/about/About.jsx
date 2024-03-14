@@ -15,7 +15,7 @@ export default function About() {
             <div className="container-xxl py-5" >
                 <div className="container">
                     <div className="row g-5 align-items-center">
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" id={`${styleAbout.section_one}`}>
                             <h6 className={`${styleAbout.section_title} text-start text-primary text-uppercase`}>About Us <span className={`${styleAbout.ligne_About}`}></span></h6>
                                 <>
                                     <h1 className="mb-4"style={{
@@ -34,7 +34,7 @@ export default function About() {
                             <Link className="btn btn-primary py-3 px-5 mt-2" to="/contact">Contact <i className="fa-solid fa-chevron-right"></i></Link>
                         </div>
                         <div className="col-lg-6">
-                            <div className="row g-3">
+                            <div className="row g-3" id={`${styleAbout.section_images}`}>
                                 <div className="col-6 text-end">
                                     <img className="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src={image2} style={{marginTop: '25%'}}/>
                                 </div>

@@ -5,6 +5,11 @@ import dotenv from "dotenv";
 import axios from "axios";
 import Replicate from "replicate";
 dotenv.config();
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 const replicate = new Replicate({
   auth: 'r8_NYJzVG7Tbe73Vyc53KJcm53x2XPRLt31ABrrC',
 });
@@ -13,7 +18,7 @@ const replicate = new Replicate({
 const app = express();
 const port = process.env.PORT || 8000;
 
-app.use(cors()); 
+// app.use(cors()); 
 app.use(express.json()); 
 
 app.get('/getData', async (req, res) => {
