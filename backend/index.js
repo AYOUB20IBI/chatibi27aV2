@@ -4,6 +4,8 @@ import cors from "cors";
 import dotenv from "dotenv";
 import axios from "axios";
 import Replicate from "replicate";
+const app = express();
+const port = process.env.PORT || 8000;
 dotenv.config();
 app.use(
   cors({
@@ -15,8 +17,7 @@ const replicate = new Replicate({
 });
 
 
-const app = express();
-const port = process.env.PORT || 8000;
+
 
 // app.use(cors()); 
 app.use(express.json()); 
